@@ -2,11 +2,14 @@ const env = process.env.NODE_ENV || 'dev';
 
 const environmentSettings = {
 	dev: {
-		host: 'localhost'
+		host: 'localhost',
+		oauthGoogleCallBackUrl: 'http://localhost:3000/api/auth/google/callback'
 	},
 	production: {
 		host: 'ds037688.mlab.com',
-		port: 37688
+		port: 37688,
+		oauthGoogleCallBackUrl:
+			'https://jetly-react.herokuapp.com//api/auth/google/callback'
 	}
 };
 
