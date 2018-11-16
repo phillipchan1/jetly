@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styles/app.css';
 import { hot } from 'react-hot-loader';
+
+import Button from './components/atoms/Button/Button';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
 					<p>
-						Edit <code>src/App.js</code> and save to reload?
+						Edit <code>src/App.js</code> and save to reload!
 					</p>
 					<a
 						className="App-link"
@@ -20,6 +21,7 @@ class App extends Component {
 					>
 						Learn React
 					</a>
+					<Button />
 					<a href="http://localhost:5000/api/auth/google">
 						Login with Google
 					</a>
